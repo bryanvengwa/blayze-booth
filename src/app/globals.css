@@ -8,52 +8,256 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
- 
+.jost-thin {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
+.jost-extralight {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.jost-light {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.jost-regular {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jost-medium {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.jost-semibold {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.jost-bold {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.jost-extrabold {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.jost-black {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.jost-thin-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.jost-extralight-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.jost-light-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.jost-regular-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.jost-medium-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.jost-semibold-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.jost-bold-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.jost-extrabold-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.jost-black-italic {
+  font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 
 /*
 ####################################################
@@ -71,28 +275,21 @@ Extra small devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
 
-
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 568px) {  
-
+@media (min-width: 568px) {
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-
+@media (min-width: 768px) {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
+@media (min-width: 992px) {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    
+@media (min-width: 1200px) {
 }
-
-
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -100,6 +297,5 @@ Custom media queries
 */
 
 /* Set width to make card deck cards 100% width */
-@media (max-width: 950px) { 
-
+@media (max-width: 950px) {
 }
