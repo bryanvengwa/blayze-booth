@@ -27,17 +27,23 @@ export const HeaderContextProvider = ({
       setActiveTab(activeTab - 1);
     }
   }
-  useEffect(()=>{
-  const interval: any = setInterval(next, 6000);
+  function changeActiveTab(tab: number) {
+    const allowedTabs = [1, 2, 3];
+    if (allowedTabs.includes(tab)) {
+      setActiveTab(tab);
+    }
+  }
+  useEffect(() => {
+    const interval: any = setInterval(next, 6000);
 
-  return () => clearInterval(interval);
-
-  })
+    return () => clearInterval(interval);
+  }, [activeTab]);
 
   const contextData = {
     next,
     previous,
     activeTab,
+    changeActiveTab,
   };
 
   return (
