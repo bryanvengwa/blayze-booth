@@ -1,8 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,8 +132,12 @@ table {
   border-spacing: 0;
 }
 
-.jost-thin {
+
+*{
   font-family: 'Jost', sans-serif;
+}
+
+.jost-thin {
   font-family: 'Jost', sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -142,13 +145,11 @@ table {
 
 .jost-extralight {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
 .jost-light {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -156,13 +157,11 @@ table {
 
 .jost-regular {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .jost-medium {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -170,13 +169,11 @@ table {
 
 .jost-semibold {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .jost-bold {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -184,13 +181,11 @@ table {
 
 .jost-extrabold {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
 .jost-black {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -198,13 +193,11 @@ table {
 
 .jost-thin-italic {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 100;
   font-style: italic;
 }
 
 .jost-extralight-italic {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 200;
   font-style: italic;
@@ -212,13 +205,11 @@ table {
 
 .jost-light-italic {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .jost-regular-italic {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -226,13 +217,11 @@ table {
 
 .jost-medium-italic {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
 .jost-semibold-italic {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-style: italic;
@@ -240,13 +229,11 @@ table {
 
 .jost-bold-italic {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .jost-extrabold-italic {
-  font-family: 'Jost', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 800;
   font-style: italic;
@@ -254,11 +241,13 @@ table {
 
 .jost-black-italic {
   font-family: 'Jost', sans-serif;
-  font-family: 'Jost', sans-serif;
   font-weight: 900;
   font-style: italic;
 }
-
+.bordered-text {
+  -webkit-text-stroke: 1px white; /* Border width and color */
+  color: transparent; /* Hide actual text content */
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S
