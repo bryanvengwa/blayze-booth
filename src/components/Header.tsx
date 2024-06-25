@@ -33,21 +33,25 @@ export default function Header() {
       <div className="absolute w-full h-full top-0 left-0 bg-[#00000058] text-white">
         <div className="container h-full w-full">
           <div className="content relative h-full w-full flex items-center  ">
-            <div className="relative flex flex-col gap-6">
+            <div className="relative ml-4 flex flex-col gap-10">
               <HeaderButtons />
 
-              <h1 className="capitalize jost-bold text-[2.1rem] leading-9">
-                {' '}
-                Unleashing Creativity, Inspiring Impressions: <br /> your vision
-                our expertise
-              </h1>
+              <div className="flex flex-col gap-4">
+                <h1 className="capitalize jost-bold text-[2.2rem] ">
+                  {' '}
+                  Unleashing Creativity, Inspiring Impressions:
+                </h1>
+                <h1 className="capitalize jost-bold text-[2.2rem] ">
+                  your vision our expertise
+                </h1>
+              </div>
               <p className="w-[70%] jost-extralight text-[1.18rem] leading-5">
                 We help you create a brand identity and execute it flawlessly,
                 from design to installation. We have expertise to turn your
                 vision into reality.
               </p>
               <Link href={'/'}>
-                <button className="bg-white px-[2rem] py-[1.5rem] text-black jost-regular">
+                <button className="bg-white mt-3 px-[2.3rem] py-[1.3rem] text-black jost-regular rounded-[4px]">
                   Work with us
                 </button>
               </Link>

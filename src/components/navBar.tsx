@@ -50,8 +50,8 @@ export default function NavBar() {
         <div className="line w-[2px] h-[80%] bg-slate-100  "></div>
 
         <div className="flex flex-col gap-3">
-          <a href="">bmvengwa@gmail.com</a>
-          <a href="">+263 785 107 909 </a>
+          <a href="" className='jost-regular' >bmvengwa@gmail.com</a>
+          <a href="" className='jost-regular' >+263 785 107 909 </a>
         </div>
       </div>
     </div>
