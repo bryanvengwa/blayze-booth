@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import { HeaderContextProvider } from '@/context/provider';
+import NavBar from '@/components/navBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <HeaderContextProvider>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+        <div className="flex w-full items-center justify-center">
+        <NavBar />
+      </div>
+          {children}</body>
       </HeaderContextProvider>
     </html>
   );
