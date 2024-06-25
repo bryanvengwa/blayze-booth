@@ -37,7 +37,7 @@ export const HeaderContextProvider = ({
     const interval: any = setInterval(next, 6000);
 
     return () => clearInterval(interval);
-  }, [activeTab]);
+  }, [activeTab, next]);
 
   const contextData = {
     next,

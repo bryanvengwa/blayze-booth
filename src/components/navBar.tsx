@@ -40,8 +40,8 @@ export default function NavBar() {
         <div className="line w-[2px] h-[80%] bg-slate-100  "></div>
         <ul className="flex gap-3">
           {
-            links.map(link =>{
-              return ( <Link href={link.href} className={` ${pathname === link.href ? "text-red-600 jost-medium" : 'jost-regular'} capitalize no-underline`} > {link.label}</Link> 
+            links.map((link, index )=>{
+              return ( <Link key={index} href={link.href} className={` ${pathname === link.href ? "text-red-600 jost-medium" : 'jost-regular'} capitalize no-underline`} > {link.label}</Link> 
 
               )}
             )
