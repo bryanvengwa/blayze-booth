@@ -1,9 +1,18 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RiMenu2Fill } from 'react-icons/ri';
+import links from '@/assets/data/links';
+import { usePathname } from 'next/navigation';
+
+const activeLinkStyles = {
+  color: 'red', 
+};
 
 export default function NavBar() {
+  const pathname = usePathname()
+  
   return (
     <div className="w-full">
       <nav className="mobile-nav flex justify-between p-2 items-center h-[5rem] lg:hidden">
@@ -30,30 +39,13 @@ export default function NavBar() {
         </div>
         <div className="line w-[2px] h-[80%] bg-slate-100  "></div>
         <ul className="flex gap-3">
-          <li>
-            {' '}
-            <Link href={'/'}>Home</Link>{' '}
-          </li>
-          <li>
-            {' '}
-            <Link href={'/'}>About</Link>{' '}
-          </li>
-          <li>
-            {' '}
-            <Link href={'/'}>Services</Link>{' '}
-          </li>
-          <li>
-            {' '}
-            <Link href={'/'}>Testimonials</Link>{' '}
-          </li>
-          <li>
-            {' '}
-            <Link href={'/'}>Promotions</Link>{' '}
-          </li>
-          <li>
-            {' '}
-            <Link href={'/'}>Contact</Link>{' '}
-          </li>
+          {
+            links.map(link =>{
+              return ( <Link href={link.href} className={` ${pathname === link.href ? "text-red-600 jost-medium" : 'jost-regular'} capitalize no-underline`} > {link.label}</Link> 
+
+              )}
+            )
+          }
         </ul>
         <div className="line w-[2px] h-[80%] bg-slate-100  "></div>
 
