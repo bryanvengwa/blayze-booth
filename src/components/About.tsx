@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import StylishButton from './StylishButton';
 
 export default function About() {
   return (
@@ -46,9 +47,7 @@ export default function About() {
               <li className='jost-light normal-case text-[#3e3c3c] '>~ And many more❗️</li>
 
             </ul>
-            <div className='bg-red-600 mt-4 text-white relative px-4 py-3 h-[3rem] w-[8rem] jost-regular' >
-           <div className='bg-black h-full w-full absolute left-0 top-0  rounded-tl-[30px] rounded-br-[30px] flex items-center justify-center ' >  Read More</div>
-          </div>
+                <StylishButton text='Read More'  />
           </div>
 
     
