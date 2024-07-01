@@ -20,8 +20,9 @@ export default function About() {
               </div>
             </div>
             <h5 className="jost-medium mt-2">
-              It's all about <span className="text-red-800">Blayze Booth </span>{' '}
-            </h5>
+  It's all about <span className="text-red-800">Blayze Booth&apos;</span>{' '}
+</h5>
+
 
             <div className="mt-7"></div>
 
