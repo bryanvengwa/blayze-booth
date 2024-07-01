@@ -10,6 +10,20 @@ const links = [
   {
     href: '/services',
     label: 'services',
+    dropDownLinks: [
+      {
+        href: '/services/development',
+        label: 'Software Development',
+      },
+      {
+        href: '/services/design',
+        label: 'Graphic Design',
+      },
+      {
+        href: '/services/marketing',
+        label: 'Digital Marketing',
+      },
+    ],
   },
   {
     href: '/testimonials',

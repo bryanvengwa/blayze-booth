@@ -2,6 +2,8 @@ import Header from '@/components/Header';
 import About from '@/components/About';
 import Services from '@/components/services';
 import NewsLetterForm from '@/components/NewsLetterForm';
+import ClientSection from '@/components/ClientSection';
+import Footer from '@/components/Footer';
 
 export default function Page() {
   return (
@@ -13,6 +15,10 @@ export default function Page() {
       <Services />
       <div className="mt-10"></div>
       <NewsLetterForm />
+      <div className="mt-10"></div>
+      <ClientSection />
+      <div className="mt-10"></div>
+      <Footer />
       <br />
       <br />
       <br />
