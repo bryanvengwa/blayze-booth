@@ -1,5 +1,5 @@
 'use client';
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect, useCallback } from 'react';
 
 const initialData = {
   next: () => {},
@@ -13,13 +13,14 @@ export const HeaderContextProvider = ({
 }: Readonly<{ children: React.ReactNode }>) => {
   const [activeTab, setActiveTab] = useState<number>(1);
 
-  function next() {
+  const next = useCallback(() => {
     if (activeTab < 3) {
       setActiveTab(activeTab + 1);
     } else {
       setActiveTab(1);
     }
-  }
+  }, [activeTab]);
+  
   function previous() {
     if (activeTab == 1) {
       setActiveTab(3);
