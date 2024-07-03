@@ -20,7 +20,7 @@ export default function NavBar() {
   
   return (
     <div className="w-full">
-      <nav className="mobile-nav flex justify-between p-2 items-center h-[5rem] lg:hidden">
+      <nav className="mobile-nav shadow-md flex justify-between p-2 items-center h-[5rem] lg:hidden">
         <div className="h-[90%] w-[11rem] ">
          
           <Image
@@ -33,7 +33,7 @@ export default function NavBar() {
         </div>
         <RiMenu2Fill size={45} className=" cursor-pointer" />
       </nav>
-      <nav className="hidden p-2 lg:flex w-full lg:w-[90%] mt-1  items-center justify-between h-[6rem] ">
+      <nav className="hidden shadow-sm  p-2 lg:flex w-full lg:w-[100%] mt-1  items-center justify-between h-[6rem] ">
         <div className="h-[90%] w-[11rem] ">
           <Image
             src={'/images/blayze-logo-1.png'}
