@@ -44,7 +44,7 @@ export default function NavBar() {
           />
         </div>
         <div className="line w-[2px] h-[80%] bg-slate-100  "></div>
-        <ul className="flex gap-3">
+        <ul className="flex gap-3 md:gap-7">
           {
             links.map((link, index )=>{
               if(link.dropDownLinks){
