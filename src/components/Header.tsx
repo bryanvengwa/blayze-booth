@@ -8,6 +8,7 @@ import Link from 'next/link';
 import HeaderButtons from './HeaderButtons';
 import HeaderNumbers from './HeaderNumbers';
 import { headerContext } from '@/context/provider';
+import HeaderContent from './HeaderContent';
 
 export default function Header() {
   const { activeTab, next } = useContext(headerContext);
@@ -23,7 +24,7 @@ export default function Header() {
   }, [activeTab]);
 
   return (
-    <header className="w-full h-[70vh] md:h-[60vh] relative">
+    <header className="w-full h-[80vh] md:h-[60vh] relative">
       <Image
         src={data}
         alt="header image"
@@ -33,23 +34,11 @@ export default function Header() {
       <div className="absolute w-full h-full top-0 left-0 bg-[#00000058] text-white">
         <div className="container h-full w-full">
           <div className="content relative h-full w-full flex items-center  ">
-            <div className="relative ml-4 flex flex-col gap-4 md:gap-10">
+            <div className="relative ml-4 flex flex-col gap-4 md:gap-10 ">
               <HeaderButtons />
+              <HeaderContent activeTab={activeTab} />
 
-              <div className="flex flex-col gap-4">
-                <h1 className="capitalize jost-bold text-[2.2rem] ">
-                  {' '}
-                  Unleashing Creativity, Inspiring Impressions:
-                </h1>
-                <h1 className="capitalize hidden md:block jost-bold text-[2.2rem] ">
-                  your vision our expertise
-                </h1>
-              </div>
-              <p className="w-[90%] md:w-[70%] jost-extralight text-[1.18rem] leading-5">
-                We help you create a brand identity and execute it flawlessly,
-                from design to installation. We have expertise to turn your
-                vision into reality.
-              </p>
+           
               <Link href={'/'}>
                 <button className="bg-white mt-3 px-[2.3rem] py-[1.3rem] text-black jost-regular rounded-[4px]">
                   Work with us

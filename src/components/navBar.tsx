@@ -34,7 +34,7 @@ export default function NavBar() {
       <nav className="hidden shadow-sm  p-2 lg:flex w-full lg:w-[100%] mt-1  items-center justify-between h-[6rem] ">
         <div className="h-[90%] w-[11rem] ">
           <Image
-            src={'/images/blayze-logo-1.png'}
+            src={'/images/3.png'}
             className="object-cover h-full w-full"
             alt="logo"
             height={300}
