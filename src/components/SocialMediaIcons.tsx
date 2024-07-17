@@ -14,19 +14,19 @@ export default function SocialMediaIcons() {
   return (
     <div className="flex-col mt-3 gap-1 w-full">
       <h3 className="jost-regular text-white text-center">Follow Us</h3>
-<div className="flex mt-3 items-center justify-center w-full ">
-<div className="flex  items-center justify-between w-[60%]  ">
-        <Icon>
-          <TfiInstagram />
-        </Icon>
-        <Icon>
-          <FaFacebook />
-        </Icon>
-        <Icon>
-          <FaLinkedin />
-        </Icon>
+      <div className="flex mt-3 items-center justify-center w-full ">
+        <div className="flex  items-center justify-between w-[60%]  ">
+          <Icon>
+            <TfiInstagram />
+          </Icon>
+          <Icon>
+            <FaFacebook />
+          </Icon>
+          <Icon>
+            <FaLinkedin />
+          </Icon>
+        </div>
       </div>
-</div>
     </div>
   );
 }
