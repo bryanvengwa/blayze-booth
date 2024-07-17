@@ -1,3 +1,4 @@
+import ServicesCardSection from './ServicesCardsSection'
 export default function Services() {
   return (
     <section>
@@ -14,6 +15,10 @@ export default function Services() {
               </span>
             </h6>
           </div>
+          <div>
+
+          </div>
+          <ServicesCardSection/>
         </div>
       </div>
     </section>
