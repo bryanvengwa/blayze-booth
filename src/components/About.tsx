@@ -64,10 +64,20 @@ export default function About() {
                 ~ And many more❗️
               </li>
             </ul>
-            <StylishButton text="Read More" />
+            <StylishButton outerColor="bg-red-500" text="Read More" />
           </div>
 
-          <div className="col-md-6"></div>
+          <div className="col-md-6">
+            <div className="flex h-full w-full">
+              <Image
+                src="/images/group-pic.webp"
+                width={600}
+                height={600}
+                className="object-contain w-[86%] h-[86%] "
+                alt="services photo"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
