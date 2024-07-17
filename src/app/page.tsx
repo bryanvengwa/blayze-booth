@@ -19,16 +19,7 @@ export default function Page() {
       <ClientSection />
       <div className="mt-10"></div>
       <Footer />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
     </div>
   );
 }
