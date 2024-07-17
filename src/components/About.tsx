@@ -73,7 +73,7 @@ export default function About() {
                 src="/images/group-pic.webp"
                 width={600}
                 height={600}
-                className="object-contain w-[86%] h-[86%] "
+                className="object-contain w-full h-full md:h-[110%] lg:w-[86%] lg:h-[86%] "
                 alt="services photo"
               />
             </div>
