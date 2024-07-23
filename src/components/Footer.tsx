@@ -60,7 +60,7 @@ export default function Footer() {
                   <h3 className="capitalize mt-3 text-black text-center jost-semibold text-[1.4em]">
                     open Hours
                   </h3>
-                  <h3 className="text-red-500  text-center jost-bold">
+                  <h3 className="text-black  text-center jost-bold">
                     WE ARE AVAILABLE 24/7
                   </h3>
                 </div>
@@ -85,12 +85,12 @@ export default function Footer() {
                   <IGFeed />
                   <IGFeed />
                 </div>
-                <div className="flex justify-center  w-[90%] gap-2">
-                  <div className=" flex text-black   items-center w-[95%] min-h-[4.5rem]  justify-between  border-2   border-solid border-black">
+                <div className="flex justify-center  bg-red-600  w-[90%] gap-2">
+                  <div className=" flex text-black   items-center w-[95%] min-h-[4.5rem]  justify-between  border-2   border-solid border-transparent">
                     <div className="min-w-[30%] h-full flex items-center justify-center  ">
-                      <FiPhoneCall size={22} />
+                      <FiPhoneCall size={22} color="white" />
                     </div>
-                    <div className="flex w-full h-full  flex-col items-start justify-center ">
+                    <div className="flex w-full h-full gap-1 text-white jost-regular flex-col items-start justify-center ">
                       <a href="">+263 71 832 9922</a>
                       <h6 className="capitalize">Call to our experts</h6>
                     </div>
@@ -139,7 +139,7 @@ export default function Footer() {
         </div>
         <br />
 
-        <div className="h-[1px] w-full bg-white  "></div>
+        <div className="h-[1px] w-full bg-white"></div>
 
         <br />
         <br />
