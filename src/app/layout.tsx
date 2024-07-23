@@ -4,6 +4,7 @@ import './globals.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import { HeaderContextProvider } from '@/context/provider';
 import NavBar from '@/components/navBar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,7 +25,10 @@ export default function RootLayout({
         <div className="flex w-full items-center justify-center">
         <NavBar />
       </div>
-          {children}</body>
+          {children}
+          <Footer/>
+          
+          </body>
       </HeaderContextProvider>
     </html>
   );

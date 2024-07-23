@@ -18,8 +18,6 @@ export default function Page() {
       <div className="mt-10"></div>
       <ClientSection />
       <div className="mt-10"></div>
-      <Footer />
-
     </div>
   );
 }
