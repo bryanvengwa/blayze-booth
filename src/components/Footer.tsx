@@ -11,13 +11,13 @@ export default function Footer() {
     <footer className="bg-white">
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-4 col-lg-3 ">
             <div className="mt-2"></div>
             <div className="flex-col items-center justify-center">
               <div className="flex items-center justify-center h-[6rem] w-full  ">
                 <Image
-                  src="/images/blayze-logo-white.webp"
-                  className="object-cover w-[70%] h-[70%] "
+                  src="/images/footer-logo.webp"
+                  className="object-cover w-full h-full "
                   width={800}
                   height={800}
                   alt="blayzebooth logo"
@@ -36,7 +36,7 @@ export default function Footer() {
               <SocialMediaIcons />
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 hidden lg:block">
             <div className="flex-col  ">
               <div className="flex items-center justify-center h-[6rem]  w-full ">
                 <h3 className="text-black jost-semibold text-center text-[1.4em] ">
@@ -67,7 +67,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-lg-3 col-md-5 ">
             <div className="flex-col ">
               <div className="flex items-center justify-center h-[6rem]  w-full ">
                 <h3 className="text-black jost-semibold text-center text-[1.4em] ">
@@ -99,15 +99,15 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 col-lg-3  hidden md:block">
             <div className="flex-col ">
               <div className="flex items-center justify-center h-[6rem]  w-full ">
                 <h3 className="text-black jost-semibold text-center text-[1.4em] ">
                   Site Map
                 </h3>
               </div>
-              <div className="flex justify-center">
-                <ul className="flex flex-col items-start gap-2 jost-regular">
+              <div className="flex justify-center items-center">
+                <ul className="flex flex-col items-start gap-[0.7em] jost-regular">
                   <li>
                     {' '}
                     <Link href="">Home</Link>{' '}
