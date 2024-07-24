@@ -1,11 +1,10 @@
-import services from '@/assets/data/services';
-import ServiceBox from './ServiceBox';
+
 import ServiceCard from './ServiceCard';
 
 export default function ServicesCardsSection() {
 
   return (
-    <div className=" mt-4 flex  flex-wrap md:flex-nowrap md:flex-row  justify-between items-center   w-full h-full ">
+    <div className=" mt-4 flex  flex-wrap md:flex-nowrap md:flex-row   justify-between md:justify-center md:gap-x-10 md:gap-y-10 items-center   w-full h-full ">
         
         <ServiceCard imagePath={'/images/software-service.svg'} serviceTitle='Software Development' />
         <ServiceCard imagePath={'/images/design-service.webp'} serviceTitle='Graphic Design' />
