@@ -20,14 +20,15 @@ interface ObjectType {
 interface LinkProps {
   TriggerName: string;
   links: ObjectType[];
+  font?: string;
 }
 
-export function LinkDropDown({ TriggerName, links }: LinkProps) {
+export function LinkDropDown({ TriggerName, links , font }: LinkProps) {
   const pathname = usePathname();
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="outline-0 jost-regular capitalize no-underline flex items center ">
+      <DropdownMenuTrigger className={`outline-0 ${font ? font : "jost-regular"} capitalize no-underline flex items center `}>
         {' '}
         {TriggerName} <MdOutlineKeyboardArrowDown />{' '}
       </DropdownMenuTrigger>

@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { RiMenu2Fill } from 'react-icons/ri';
@@ -8,38 +8,95 @@ import { usePathname } from 'next/navigation';
 import { FaPhone } from 'react-icons/fa6';
 import { TbMailFilled } from 'react-icons/tb';
 import { LinkDropDown } from './LinkDropDown';
-import NavOverLay from './NavOverlay';
 
 const activeLinkStyles = {
   color: 'red',
 };
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isTimeoutActive, setIsTimeoutActive] = useState(false);
   const pathname = usePathname();
+
+  function handleMenuClick() {
+    if (isTimeoutActive) return;
+
+    const nextState = !isOpen;
+    setIsOpen(nextState);
+
+    if (nextState) {
+      setIsTimeoutActive(true);
+      setTimeout(() => {
+        setIsOpen(false);
+        setIsTimeoutActive(false);
+      }, 5000);
+    }
+  }
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <div className="w-full">
-      <nav className="mobile-nav shadow-md flex justify-between p-2 items-center h-[5rem] lg:hidden">
+      <nav className="mobile-nav shadow-md flex justify-between p-2 items-center h-[12vh] lg:hidden">
         <div className="h-[90%] w-[11rem] ">
-          <Image
-            src={'/images/3.png'}
-            className="object-cover h-full w-full lg:translate-x-[1em] "
-            alt="blayzebooth logo"
-            height={300}
-            width={300}
-          />
+          <Link onClick={handleMenuClick} href={'/'}>
+            <Image
+              src={'/images/3.png'}
+              className="object-cover h-full w-full "
+              alt="blayzebooth logo"
+              height={300}
+              width={300}
+            />
+          </Link>
         </div>
-        <NavOverLay />
+        <RiMenu2Fill
+          onClick={handleMenuClick}
+          color="black"
+          className="pl-3"
+          size={43}
+        />
+        <div
+          className={`overlay ${
+            isOpen ? 'translate-x-0 w-[100vw] ' : 'translate-x-[-100vw]  '
+          } w-0 transition-all duration-1000 flex items-center text-white jost-bold lg:hidden capitalize justify-center top-[12vh] left-0 absolute z-20 h-[90vh]  bg-[#fe1515d9]`}
+        >
+          <div className="flex flex-col gap-5 text-[1.3rem]">
+            <Link onClick={handleMenuClick} href={'/'}>
+              Home
+            </Link>
+            <Link onClick={handleMenuClick} href={''}>
+              About
+            </Link>
+            <LinkDropDown
+              font="jost-bold"
+              TriggerName="Services"
+              links={links[2].dropDownLinks!}
+            />
+            <Link onClick={handleMenuClick} href={''}>
+              Testimonials
+            </Link>
+            <Link onClick={handleMenuClick} href={''}>
+              Promotions
+            </Link>
+            <Link onClick={handleMenuClick} href={''}>
+              Contact Us
+            </Link>
+          </div>
+        </div>
       </nav>
       <nav className="hidden shadow-sm  p-2 lg:flex w-full lg:w-[100%] mt-1  items-center justify-between h-[6rem] ">
         <div className="h-[90%] w-[11rem] ">
-          <Image
-            src={'/images/3.png'}
-            className="object-cover h-full w-full"
-            alt="logo"
-            height={300}
-            width={300}
-          />
+          <Link href={'/'}>
+            <Image
+              src={'/images/3.png'}
+              className="object-cover h-full w-full"
+              alt="logo"
+              height={300}
+              width={300}
+            />
+          </Link>
         </div>
         <div className="line w-[2px] h-[80%] bg-slate-100  "></div>
         <ul className="flex gap-3 md:gap-7">
