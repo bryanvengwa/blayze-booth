@@ -72,20 +72,20 @@ export default function NavBar() {
         </ul>
         <div className="line w-[2px] h-[80%] bg-slate-100  "></div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 lg:translate-x-[-3em] ">
           <a href="" className="jost-regular flex gap-1 items-center ">
             {' '}
             <span>
               <TbMailFilled />
             </span>{' '}
-            bmvengwa@gmail.com
+          blayzebooth@gmail.com
           </a>
           <a href="" className="jost-regular flex gap-1 items-center ">
             {' '}
             <span>
               <FaPhone />
             </span>{' '}
-            +263 785 107 909{' '}
+            +263 718 329 922{' '}
           </a>
         </div>
       </nav>

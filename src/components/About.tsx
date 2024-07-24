@@ -64,6 +64,7 @@ export default function About() {
                 ~ And many more❗️
               </li>
             </ul>
+            <div className='mt-3' ></div>
             <StylishButton outerColor="bg-red-500" text="Read More" />
           </div>
 
@@ -73,7 +74,7 @@ export default function About() {
                 src="/images/group-pic.webp"
                 width={600}
                 height={600}
-                className="object-contain w-full h-full md:h-[110%] lg:w-[86%] lg:h-[86%] "
+                className="object-contain w-full h-full md:h-[110%] md:w-[120%] lg:w-[86%] lg:h-[86%] "
                 alt="services photo"
               />
             </div>
