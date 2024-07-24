@@ -11,7 +11,7 @@ export default function ServiceCard({
   serviceTitle,
 }: ServiceCardProps) {
   return (
-    <div className="flex flex-col sm:w-[45%] mb-[1em] md:mb-0   md:w-[25%] lg:w-[13.4%]">
+    <div className="flex flex-col w-[45%] mb-[1em] md:mb-0   md:w-[25%] lg:w-[13.4%]">
       <div className="flex items-center justify-center ">
         <Image
           src={imagePath}

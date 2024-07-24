@@ -22,9 +22,9 @@ export default function NavBar() {
       <nav className="mobile-nav shadow-md flex justify-between p-2 items-center h-[5rem] lg:hidden">
         <div className="h-[90%] w-[11rem] ">
           <Image
-            src={'/images/blayze-logo-1.png'}
-            className="object-cover h-full w-full"
-            alt="logo"
+            src={'/images/3.png'}
+            className="object-cover h-full w-full lg:translate-x-[1em] "
+            alt="blayzebooth logo"
             height={300}
             width={300}
           />
@@ -78,7 +78,7 @@ export default function NavBar() {
             <span>
               <TbMailFilled />
             </span>{' '}
-          blayzebooth@gmail.com
+            blayzebooth@gmail.com
           </a>
           <a href="" className="jost-regular flex gap-1 items-center ">
             {' '}
