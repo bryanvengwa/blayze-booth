@@ -2,12 +2,13 @@ import ClientCard from './ClientCard';
 
 export default function ClientSection() {
   return (
-    <section>
-      <div className="container">
-        <div className="flex flex-wrap space-x-[0.5em] space-y-[0.5em]  items-center justify-center md:justify-between">
+    <section className='bg-[#F1F1F1] py-[1rem]' >
+      <div className="container-md-fluid">
+        <div className="flex flex-wrap sm:space-x-[0.5em] sm:space-y-[0.5em] md:gap-5  items-center justify-center ">
           <ClientCard />
+          <ClientCard down={true} />
           <ClientCard />
-          <ClientCard />
+          <ClientCard down={true} />
           <ClientCard />
         </div>
       </div>
