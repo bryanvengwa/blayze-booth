@@ -75,7 +75,7 @@ export default function Page() {
                   At eMC we believe that collaboration is key to success. We
                   work closely with our clients to understand their needs and
                   wants, and to develop solutions that meet their unique
-                  requirements. We start by getting to know our clients'
+                  requirements. We start by getting to know our clients
                   businesses. We want to understand their goals, their
                   challenges, and their target audience. We also want to
                   understand their industry and the competitive landscape.
@@ -85,7 +85,7 @@ export default function Page() {
                   At eMC we believe that collaboration is key to success. We
                   work closely with our clients to understand their needs and
                   wants, and to develop solutions that meet their unique
-                  requirements. We start by getting to know our clients'
+                  requirements. We start by getting to know our clients
                   businesses. We want to understand their goals, their
                   challenges, and their target audience. We also want to
                   understand their industry and the competitive landscape. Once
