@@ -66,7 +66,7 @@ export default function NavBar() {
             <Link onClick={handleMenuClick} href={'/'}>
               Home
             </Link>
-            <Link onClick={handleMenuClick} href={''}>
+            <Link onClick={handleMenuClick} href={'/about'}>
               About
             </Link>
             <LinkDropDown
@@ -74,13 +74,13 @@ export default function NavBar() {
               TriggerName="Services"
               links={links[2].dropDownLinks!}
             />
-            <Link onClick={handleMenuClick} href={''}>
+            <Link onClick={handleMenuClick} href={'/testimonials'}>
               Testimonials
             </Link>
-            <Link onClick={handleMenuClick} href={''}>
+            <Link onClick={handleMenuClick} href={'/promotions'}>
               Promotions
             </Link>
-            <Link onClick={handleMenuClick} href={''}>
+            <Link onClick={handleMenuClick} href={'/contact'}>
               Contact Us
             </Link>
           </div>

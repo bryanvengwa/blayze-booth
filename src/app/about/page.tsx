@@ -17,7 +17,7 @@ export default function Page() {
           which is priority to our success story
         </p>
       </div>
-      <div className="mt-10"></div>
+      <div className="mt-[5rem]"></div>
       <section>
         <div className="container">
           <div className="row">
