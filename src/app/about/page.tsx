@@ -1,5 +1,5 @@
 import MiniHeader from '@/components/MiniHeader';
-import Image from 'next/image';
+import AboutImgContainer from '@/components/AboutImgContainer';
 
 export default function Page() {
   return (
@@ -22,14 +22,12 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <Image
-                src="/images/black-programmer.webp"
-                height={800}
-                width={800}
-                alt=""
+              <AboutImgContainer
+                imageString="/images/black-programmer.webp"
+                alt="programmer"
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 h-[15rem]  lg:h-[28rem]">
               <div className="flex gap-3  items-end h-[4rem] ">
                 <h2 className="jost-bold text-[1.5rem] mb-[-6px]">
                   Who Are We
@@ -38,7 +36,42 @@ export default function Page() {
               <div className="mt-7"></div>
 
               <div className="flex flex-col ">
-                <p className="jost-paragraph leading-5 ">
+                <p className="text-[#0000008A]  jost-paragraph  leading-[1.2rem] lg:text-[1.2rem]  lg:leading-[1.42rem] ">
+                  At BlayzeBooth, we are passionate about empowering businesses
+                  through innovative software development, strategic digital
+                  marketing, and captivating design solutions. Founded in 2020,
+                  our team of experts combines technical proficiency with
+                  creative flair to deliver exceptional results that drive
+                  success for our clients.
+                </p>
+                <br />
+                <p className="text-[#0000008A]  jost-paragraph  leading-[1.2rem] lg:text-[1.2rem]  lg:leading-[1.42rem] ">
+                  Our mission is to help businesses thrive in the digital
+                  landscape by providing tailored solutions that meet their
+                  unique needs. We believe in the power of technology and
+                  creativity to transform ideas into reality, enabling our
+                  clients to achieve their goals and stand out in a competitive
+                  market.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="mt-10"></div>
+
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="flex gap-3  items-end h-[4rem] ">
+                <h2 className="jost-bold text-[1.5rem] mb-[-6px]">
+                  How Do We Work With Our Clients
+                </h2>
+              </div>
+              <div className="mt-7"></div>
+              <div className="flex flex-col ">
+                <p className="text-[#0000008A]  jost-paragraph  leading-[1.2rem]  ">
                   At eMC we believe that collaboration is key to success. We
                   work closely with our clients to understand their needs and
                   wants, and to develop solutions that meet their unique
@@ -47,7 +80,8 @@ export default function Page() {
                   challenges, and their target audience. We also want to
                   understand their industry and the competitive landscape.
                 </p>
-                <p className="jost-paragraph leading-5 ">
+                <br />
+                <p className="text-[#0000008A] jost-paragraph leading-[1.2rem] ">
                   At eMC we believe that collaboration is key to success. We
                   work closely with our clients to understand their needs and
                   wants, and to develop solutions that meet their unique
@@ -55,16 +89,14 @@ export default function Page() {
                   businesses. We want to understand their goals, their
                   challenges, and their target audience. We also want to
                   understand their industry and the competitive landscape. Once
-                  we have a good understanding of our clients' needs, we work
-                  with them to develop a custom solution. We take the time to
-                  listen to their feedback and to make sure that we are meeting
-                  their expectations. We are also committed to building strong
-                  relationships with our clients. We believe that the best way
-                  to get along with them is to be honest, transparent, and
-                  responsive. We are always available to answer their questions
-                  and to provide them with the support they need.
                 </p>
               </div>
+            </div>
+            <div className="col-md-6 h-[15rem]  lg:h-[28rem]">
+              <AboutImgContainer
+                imageString="/images/black-programmer.webp"
+                alt="programmer"
+              />
             </div>
           </div>
         </div>
