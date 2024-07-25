@@ -9,12 +9,12 @@ export default function Page() {
       <div className="mt-4"></div>
       <div className="flex justify-center">
         <p className="jost-paragraph text-center leading-[1.2rem] text-[#0000008A] w-[90%] md:w-[80%] ">
-          Epignosis Media Creations is a private owned meadia and software
-          development company incorpoted in the year 2019 and we made strides to
-          refine products and services prior to full scale operations in 2022. A
-          mandate to secure the presents and future by creating quality products
-          and services eMedia fully commits tonclientele growth and seccuse
-          which is priority to our success story
+          Epignosis Media Creations is a private owned media and software
+          development company incorporated in the year 2019 and we made strides
+          to refine products and services prior to full-scale operations in
+          2022. A mandate to secure the present and future by creating quality
+          products and services, eMedia fully commits to clientele growth and
+          success which is priority to our success story.
         </p>
       </div>
       <div className="mt-[5rem]"></div>
