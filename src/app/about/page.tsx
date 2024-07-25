@@ -17,7 +17,7 @@ export default function Page() {
           success which is priority to our success story.
         </p>
       </div>
-      <div className="mt-[5rem]"></div>
+      <div className="mt-[3em] md:mt-[5rem] "></div>
       <section>
         <div className="container">
           <div className="row">
@@ -58,12 +58,13 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className="mt-10"></div>
+
+      <div className="mt-[10em]  lg:mt-10"></div>
 
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-12 order-md-1 order-last">
               <div className="flex gap-3  items-end h-[4rem] ">
                 <h2 className="jost-bold text-[1.5rem] mb-[-6px]">
                   How Do We Work With Our Clients
@@ -92,7 +93,7 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6 h-[15rem]  lg:h-[28rem]">
+            <div className="col-md-6 col-12 order-md-2 h-[15rem]  lg:h-[28rem]">
               <AboutImgContainer
                 imageString="/images/black-programmer.webp"
                 alt="programmer"
